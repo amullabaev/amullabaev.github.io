@@ -1,1 +1,392 @@
-<h1>Hello World</h1>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amirkhan Mullabaev &mdash; Senior Frontend Engineer</title>
+  <meta name="description"
+    content="Frontend engineer with 9+ years of experience. I work mostly with React and TypeScript — spent the last 5+ years building large-scale web apps for enterprise clients.">
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://amullabaev.dev" />
+  <meta name="theme-color" content="#01696f">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amullabaev.dev">
+  <meta property="og:title" content="Amirkhan Mullabaev — Senior Frontend Engineer">
+  <meta property="og:description"
+    content="Frontend engineer with 9+ years of experience. I work mostly with React and TypeScript — spent the last 5+ years building large-scale web apps for enterprise clients.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Amirkhan Mullabaev — Senior Frontend Engineer">
+  <meta name="twitter:description"
+    content="Frontend engineer with 8+ years of experience. I work mostly with React and TypeScript — spent the last 5+ years building large-scale web apps for enterprise clients.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2301696f'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='sans-serif' font-weight='700' fill='white'>AM</text></svg>">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2301696f'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='sans-serif' font-weight='700' fill='white'>AM</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Amirkhan Mullabaev",
+      "url": "https://amullabaev.dev",
+      "jobTitle": "Senior Frontend Engineer",
+      "description": "Frontend engineer with 8+ years of experience. I work mostly with React and TypeScript — spent the last 5+ years building large-scale web apps for enterprise clients.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Krakow",
+        "addressCountry": "PL"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/amullabaev",
+        "https://github.com/amullabaev"
+      ],
+      "knowsAbout": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Frontend Engineering"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header role="banner">
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <div class="nav__logo">
+          <!-- placeholder -->
+          <a href="#"></a>
+        </div>
+        <div class="nav__links">
+          <a href="#">Resume</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#other">Other</a>
+          <a href="#projects">Pet projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav__actions">
+          <button class="nav__theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+          </button>
+          <button class="nav__burger" id="nav-burger" type="button" aria-expanded="false"
+            aria-controls="nav-mobile-menu" aria-label="Open menu">
+            <svg class="icon-menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <svg class="icon-close" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="nav__mobile-menu" id="nav-mobile-menu">
+        <a href="#">Resume</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#other">Other</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__content">
+        <p class="hero__role">Senior Frontend Engineer</p>
+        <h1 class="hero__name">Amirkhan Mullabaev</h1>
+        <p class="hero__tagline">
+          9 years writing frontend code. Making products<br>
+          <strong>Faster:</strong> finding and fixing real bottlenecks.<br>
+          <strong>Cleaner:</strong> testing and CI/CD pipelines built from scratch.<br>
+          <strong>Smoother:</strong> better experience for users and the developers.
+        </p>
+        <div class="hero__cta">
+          <a href="#experience" class="btn btn--primary">View Projects</a>
+          <a href="cv.pdf" class="btn btn--outline" download="Amirkhan_Mullabaev_Senior_React_CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-heading">About</h2>
+      <div class="about__body">
+        <p>I've been writing frontend code professionally since 2016. React and Vue with TypeScript are where I'm most
+          at home, but over the years I've ended up deep in backend territory, CI/CD pipelines, microfrontend setups and
+          different frameworks too — sometimes because someone had to, sometimes because I wanted to.</p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-heading">Skills</h2>
+      <div class="skills__groups">
+        <div class="skills__group">
+          <p class="skills__group-label">Frontend</p>
+          <div class="skills__chips">
+            <span class="chip">React.JS</span>
+            <span class="chip">Vue.JS</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">SCSS</span>
+            <span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <p class="skills__group-label">Backend</p>
+          <div class="skills__chips">
+            <span class="chip">Node.JS</span>
+            <span class="chip">Python FastAPI</span>
+            <span class="chip">Java Spring</span>
+            <span class="chip">RESTful API</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">AWS Lambda</span>
+            <span class="chip">AWS S3</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <p class="skills__group-label">Tooling</p>
+          <div class="skills__chips">
+            <span class="chip">Vite</span>
+            <span class="chip">ESLint</span>
+            <span class="chip">Prettier</span>
+            <span class="chip">SonarQube</span>
+            <span class="chip">Git</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <p class="skills__group-label">Testing &amp; Process</p>
+          <div class="skills__chips">
+            <span class="chip">Jest</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">Jasmine</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Microfrontends</span>
+            <span class="chip">Agile</span>
+            <span class="chip">SAFe</span>
+            <span class="chip">Scrum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section-heading">Experience</h2>
+      <div class="timeline">
+
+        <article class="timeline__item">
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__company">EPAM</h3>
+                <p class="timeline__meta">Senior Software Engineer &middot; Krakow, Poland</p>
+              </div>
+              <p class="timeline__period">Nov 2019 &ndash; Present</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li class="timeline__bullet">Took slow React and Vue apps and and increased page load speed making it 4x
+                faster through profiling
+                and refactoring as well as critical resources loading optimization.</li>
+              <li class="timeline__bullet">Built number of microfrontend apps from scratch, integrated critical
+                functionality across multiple
+                projects, set up CI/CD pipelines, and
+                kept quality in check with unit, acceptance, and integration tests also relying on SonarQube reports.
+              </li>
+              <li class="timeline__bullet">Worked on developing a frontend part for a search engine for scientific
+                documents, a client-side PDF generator,
+                and AWS Lambda/S3 integrations; also handled most of the coordination with external teams.</li>
+              <li class="timeline__bullet">Led communications with cross-functional teams and stakeholders to ensure
+                smooth project delivery.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__company">Zensoft KG</h3>
+                <p class="timeline__meta">Software Engineer &middot; Bishkek, Kyrgyzstan</p>
+              </div>
+              <p class="timeline__period">Jan 2018 &ndash; Oct 2019</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li class="timeline__bullet">Built and maintained ERP systems for oil and gas companies using mostly
+                Ember.js, React, and Spring Boot.</li>
+              <li class="timeline__bullet">Led and maintained development of three critical apps and one common library
+              </li>
+              <li class="timeline__bullet">Mentored a number of junior devs and participated in backend work across
+                several products.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__company">NambaSoft</h3>
+                <p class="timeline__meta">Software Engineer &middot; Bishkek, Kyrgyzstan</p>
+              </div>
+              <p class="timeline__period">Apr 2017 &ndash; Dec 2017</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li class="timeline__bullet">Worked on a mobile payment app from zero to working prototype in under a
+                year, met with the customer, intergrated the app into a superapp host
+                (Angular, TypeScript, Node.js, Express).</li>
+              <li class="timeline__bullet">Integrated with a major payment provider so users could pay for ads directly
+                in the app.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__company">Velox Software</h3>
+                <p class="timeline__meta">Software Engineer &middot; Bishkek, Kyrgyzstan</p>
+              </div>
+              <p class="timeline__period">Aug 2016 &ndash; Apr 2017</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li class="timeline__bullet">Migrated an Electron.js desktop language-learning app from AngularJS to
+                Angular 2, also doing refactoring and adaptation work (Angular, Electron.js, TypeScript, SCSS).</li>
+              <li class="timeline__bullet">Built interactive mini-games for kids as part of the learning path.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="other" id="other" aria-labelledby="other-heading">
+      <h2 id="other-heading" class="section-heading">Other</h2>
+      <div class="projects__grid">
+
+        <article class="timeline__item">
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__company">Claude Certified Architect - Foundations</h3>
+              </div>
+            </div>
+            <a href="https://www.credly.com/badges/8f13ed5c-dd63-44f1-8289-dbdd8c26b042" target="_blank">
+              <img src="https://images.credly.com/images/f2040db3-3904-4240-8966-e87b1510bea0/blob" loading="lazy"
+                alt="Claude AI Certified Badge" class="other__badge">
+            </a>
+            <p>The Claude Certified Architect – Foundations credential is designed for solution architects. Earners can
+              design and build production-grade applications with Claude using Claude Code, the Claude Agent SDK, the
+              Claude
+              API, and MCP.
+              <a href="https://www.credly.com/badges/8f13ed5c-dd63-44f1-8289-dbdd8c26b042" target="_blank">More...</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">Pet projects</h2>
+      <div class="projects__grid">
+
+        <!-- <article class="project-card">
+          <div>
+            <h3 class="project-card__title">[PLACEHOLDER: Project name]</h3>
+            <p class="project-card__stack">[PLACEHOLDER: tech stack, e.g. React &middot; TypeScript &middot; Node.js]
+            </p>
+          </div>
+          <p class="project-card__description">[PLACEHOLDER: one-line description of what this project does]</p>
+          <div class="project-card__links">
+            <a class="project-link" href="#" target="_blank">GitHub &#8599;</a>
+            <a class="project-link" href="#" target="_blank">Live &#8599;</a>
+          </div>
+        </article> -->
+
+        <article class="project-card">
+          <div>
+            <h3 class="project-card__title">To be added soon</h3>
+            <p class="project-card__stack"></p>
+          </div>
+          <p class="project-card__description"></p>
+          <div class="project-card__links">
+            <a class="project-link" href="#" target="_blank"></a>
+            <a class="project-link" href="#" target="_blank"></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-heading">Contact</h2>
+      <div class="contact__links">
+        <div class="contact__item">
+          <span class="contact__label">Location</span>
+          <span class="contact__value contact__value--plain">Krakow, Poland</span>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Email</span>
+          <a class="contact__value" href="mailto:a.mullabaev@gmail.com" target="_blank">a.mullabaev@gmail.com</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">LinkedIn</span>
+          <a class="contact__value" href="https://linkedin.com/in/amullabaev"
+            target="_blank">linkedin.com/in/amullabaev</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">GitHub</span>
+          <a class="contact__value" href="https://github.com/amullabaev" target="_blank">github.com/amullabaev</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="footer-year"></span> Amirkhan Mullabaev.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
