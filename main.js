@@ -5,19 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const burgerButton = document.getElementById('nav-burger');
   const header = document.querySelector('.site-nav');
 
+  const THEME_STORAGE_KEY = 'theme';
+
   const applyTheme = (theme) => {
     const isDark = theme === 'dark';
     docEl.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
     if (themeToggle) {
       themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     }
   };
 
-  // 1. Theme (system preference, no localStorage)
+  // 1. Theme (persisted in localStorage, falls back to system preference)
+  const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
   const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-  applyTheme(prefersDark ? 'dark' : 'light');
+  applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : (prefersDark ? 'dark' : 'light'));
+
   themeToggle?.addEventListener('click', () => {
-    applyTheme(docEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    const nextTheme = docEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
   });
 
   // 2. Footer year
